@@ -14,48 +14,100 @@
   }
 }
 
-h1{
-  text-align: center;
-  font-size:40px;
-  padding-top: 10px;  
+* {
+  margin: 0;
+  padding: 0;  
+  text-decoration: none;  
+}
+
+.heading-3 {  
+  color:white;  
+  text-decoration:underline;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  padding: 10px;    
+  background-color: rgb(15, 69, 86);  
 }
 
 body {
-background-color: rgb(37, 78, 95);
-color: white;
-font-family: Arial, Helvetica, sans-serif;
-padding: 20px; 
+  background-color: rgb(13, 43, 57);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  /* padding: 20px; */
+  }
+
+nav {
+  display:flex;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  display: inline-block; 
+  list-style: none;  /* set list-style to none in ul to remove the bullet points */
+  text-align: left;  
+  font-size: 16px;
+  padding: 20px 50px 20px 20px;
+  
+}
+.nav-links li a{
+  text-decoration: none;
+  position: relative;
+  padding: 5px;
+}
+
+.nav-links li a::after {
+  width: 0%;
+  height: 2px; 
+  content: "";
+  background:rgb(148, 97, 70); 
+  position: absolute;
+  bottom: 0;
+  left: 0;  
+  transition: 0.5s;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.header-link a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 .row {
   display: flex;
 }
 .column {
-  flex: 50%;  
-}
-#column2 {
-  padding: 10px;
-}
-
-.style {
-  background-color: white;
-  color: rgb(37, 78, 95);
-  padding: 15px;
-  border-radius: 4px;
-  font-size: 20px;
-  text-decoration: underline;
+  flex: 33%;
+  margin: 80px 50px 0 50px;
+  position: relative;
 }
 
-.my-image { 
-  border-radius: 2%;  
-  cursor: pointer;
-  max-width: 100%;
-  height: auto;
+.box {
+  background-color: rgb(15, 69, 86);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 16px;  
 }
 
 .images { 
-  border-radius: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 30%;  
+  border-radius: 10px;
   cursor: pointer;
-  max-width: 33%;
-  height: 33%;
+}
+
+#my-image {
+  float:right;
+  width: 615px;
+  height: 410px;
+  padding: 50px 320px 5px 20px;
 }

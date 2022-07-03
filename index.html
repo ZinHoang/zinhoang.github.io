@@ -1,61 +1,53 @@
-<html>
+<html lang="en">
     <head>
         <title>Zin's blog</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="styles/main.css" rel="stylesheet">
-        <!-- the link below enables the usage of icons from fontawesome library -->
+        <!-- the link below enables the usage of icons from font-awesome library -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" crossorigin="anonymous">
-
     </head>
-    <body>      
-      
-      <h1>Kia ora, welcome to <span style="color:#d0a755">Zin's blog </span>
-        <i class="fas fa-hand-peace"></i>
-      </h1>
+
+    <body>  
+      <div class="header">
+        <nav>
+          <h1 style="font-size: 40px; padding-left: 20px;">Kia ora, welcome to <span style=" color:rgb(70, 124, 148)">Zin's blog </span>
+            <i class="fas fa-hand-peace"></i>
+          </h1>
+          <ul class="nav-links header-link">
+            <li><a href="./blog/identity-values.html">About</a></li>
+            <li><a href="./blog/html-css.html">Technical</a></li>
+            <li><a href="./blog/learning-plan.html">Plan</a></li>
+          </ul>
+        </nav>        
+      </div>
+
       <div class="row"> 
-        <div class="column">
-          <img class="my-image"
-          src="images\Zin_Queenstown.jpg"
-          alt="Zin's photo">
-
-          <p>
-            <a href="./blog/html-css.html" style="color:white;text-transform: uppercase; font-size: 15px;">
-              <br>Technical blog
-            </a>
-          </p>
-
-        </div>      
-        <div class="column" id="column2">
-          <p class="style">My goals: 
-            <ul>
-              <li>Become a web developer &nbsp; <i class="fas fa-desktop"></i> </li>
-              <li>Support the less fortunate through charity initiatives
-                &nbsp; <i class="fas fa-hand-holding-heart"></i>
-              </li>
-            </ul>             
-          </p>
-          <p class="style">My hobbies:
-            <ul>
-              <li>Playing sports &nbsp; <i class="fas fa-table-tennis-paddle-ball"></i> </li>
-              <li>Traveling &nbsp; <i class="fas fa-plane"></i> </li>          
-            </ul>
-          </p>
-          <p class="style">My pets:
-            <ul>
-              <li>Mun - black female cat &nbsp;<i class="fas fa-cat"></i></li>
-              <li>Lai - tabby male cat &nbsp;<i class="fas fa-cat"></i> </li>
-            </ul>
-          </p>
-          <div>
-            <img class="images" src="images\Facebook_image6.jpg"
-            alt="Photo of Lai">
-            <img class="images" src="images\Facebook_image7.jpg"
-            alt="Photo of Mun">
+                        
+        <div class="column box"> <h3 class="heading-3"><em>My goals:</em></h3>
+          <ul class="box">
+            <li>Become a web developer &nbsp; <i class="fas fa-desktop"></i></li>
+            <li>Support the less fortunate through charity initiatives
+              &nbsp; <i class="fas fa-hand-holding-heart"></i>
+            </li>
+          </ul>             
+        </div>
+        <div class="column box"> <h3 class="heading-3"><em>My hobbies:</em></h3>
+          <ul class="box">
+            <li>Playing sports &nbsp; <i class="fas fa-table-tennis-paddle-ball"></i></li>
+            <li>Traveling &nbsp; <i class="fas fa-plane"></i></li>          
+          </ul>
+        </div>          
+        <div class="column box"> <h3 class="heading-3"><em>My pets:</em></h3>
+          <ul class="box">
+            <li>Mun - black female cat &nbsp;<i class="fas fa-cat"></i></li>
+            <li>Lai - tabby male cat &nbsp;<i class="fas fa-cat"></i></li>
+          </ul>
+        </div>
+      </div>        
+          
+          <div>            
             <img class="images" src="images\Facebook_image5.jpg"
             alt="Photo of Lai & Mun">
-          </div>
-          
-        </div>        
-     
+          </div>  
     </body>   
 </html>
