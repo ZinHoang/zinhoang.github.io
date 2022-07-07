@@ -3,23 +3,6 @@
   padding: 0;  
   text-decoration: none;  
 }
-@media screen and (max-width: 320px) {
-  body{
-    background-color: rgba(33, 74, 33, 0.947);   /* To select a corresponding landscape background image for this size of screen */
-  }
-}
-@media screen and (max-width: 768px) {
-  body{
-    background-color: rgba(193, 117, 70, 0.947);
-  }
-}
-@media screen and (min-width: 1200px) {
-  body{
-    background-color: white;
-    color: rgb(13, 43, 57);
-    font-family: Arial, Helvetica, sans-serif;
-  }
-} 
 .header-welcome {
   font-size: 40px; 
   padding-left: 20px;
@@ -45,13 +28,23 @@
   width: 100%;
   height: 100%;
 }
-.blur-effect {
-  filter:blur(5px);
-  -webkit-filter: blur(5px);
+@media screen and (max-width: 320px) {
+  body{
+    background-color: rgba(33, 74, 33, 0.947);   /* To select a corresponding landscape background image for this size of screen */
+  }
 }
-
-
-
+@media screen and (max-width: 768px) {
+  body{
+    background-color: rgba(193, 117, 70, 0.947);
+  }
+}
+@media screen and (min-width: 1200px) {
+  body{
+    background-color: white;
+    color: rgb(13, 43, 57);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+} 
 .row {
   display: flex;
   
