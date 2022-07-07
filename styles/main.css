@@ -1,6 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;  
+  text-decoration: none;  
+}
 @media screen and (max-width: 320px) {
   body{
-    background-color: rgba(33, 74, 33, 0.947);
+    background-color: rgba(33, 74, 33, 0.947);   /* To select a corresponding landscape background image for this size of screen */
   }
 }
 @media screen and (max-width: 768px) {
@@ -10,110 +15,72 @@
 }
 @media screen and (min-width: 1200px) {
   body{
-    background-color: rgb(37, 78, 95);
+    background-color: white;
+    color: rgb(13, 43, 57);
+    font-family: Arial, Helvetica, sans-serif;
   }
+} 
+.header-welcome {
+  font-size: 40px; 
+  padding-left: 20px;
 }
-
-* {
-  margin: 0;
-  padding: 0;  
-  text-decoration: none;  
-}
-
-.heading-3 {  
-  color:white;  
+.index-heading-3 {  
+  color:rgb(199, 148, 81);  
   text-decoration:underline;
 }
-
+.index-content {
+  color:rgb(199, 148, 81);
+}
 .header {
   width: 100%;
-  height: 50px;
-  padding: 10px;
-  color: white;    
-  background-color: rgb(13, 43, 57);  
-  background-image: linear-gradient(to bottom, rgb(13, 43, 57),rgb(22, 49, 62),rgb(37, 92, 117));
+  height: 48px;
+  padding: 10px 10px 0px 10px;   
+  color:rgb(41, 91, 114) ;  
+  background-color: white; 
 }
-.header-link a:visited {
-  text-decoration: none;
-  color: white;
-}
-.header-link {  
-  color: white;
-}
-
-body {
-  background-color: white;
-  color: rgb(13, 43, 57);
-  font-family: Arial, Helvetica, sans-serif;
-  /* padding: 20px; */
-  }
-
-nav {
-  display:flex;
-  justify-content: space-between;
-}
-
-.nav-links li {
-  display: inline-block; 
-  list-style: none;  /* set list-style to none in ul to remove the bullet points */
-  text-align: left;  
-  font-size: 16px;
-  padding: 20px 50px 20px 20px;
-  
-}
-.nav-links li a{
-  text-decoration: none;
-  position: relative;
-  padding: 5px;
-}
-
-.nav-links li a::after {
-  width: 0%;
-  height: 2px; 
-  content: "";
-  background:rgb(148, 97, 70); 
-  position: absolute;
-  bottom: 0;
-  left: 0;  
-  transition: 0.5s;
-}
-
-.nav-links li a:hover::after {
+.landscape-image {
+  background-image:url("../images/landscape1.jpg");
+  backdrop-filter: blur(5px);  
+  background-size: 1940px;
   width: 100%;
+  height: 100%;
 }
+.blur-effect {
+  filter:blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+
 
 .row {
   display: flex;
+  
 }
-.column {
+.two-column {
+  flex: 50%;  
+  position: relative;
+}
+#column-2 {
+  padding-right: 250px;
+}
+.three-column {
   flex: 33%;
   margin: 80px 50px 0 50px;
   position: relative;
 }
-
+.three-column ul {    
+  padding: 20px;
+  list-style: none;    
+}
 .box {
-  background-color: rgb(13, 43, 57);
-  background-image: linear-gradient(to bottom, rgb(13, 43, 57),rgb(22, 49, 62),rgb(37, 92, 117));
+  /*background-color: rgb(13, 43, 57);
+  background-image: linear-gradient(to bottom, rgb(13, 43, 57),rgb(22, 49, 62),rgb(37, 92, 117)); 
+  background-image:url("../images/landscape1.jpg"); */
   color: white;
   padding: 20px;
   border-radius: 20px;
   font-size: 16px;  
 }
-.content {    
-  padding: 20px;
-  list-style: none;    
-}
-
-.images { 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  width: 30%;  
-  border-radius: 10px;
-  cursor: pointer;
-}
-
 #my-image {
   float:right;
   border-radius: 50%;
@@ -121,4 +88,131 @@ nav {
   height: 410px;
   margin: 50px 320px 5px 20px;
   box-shadow: 10px 5px 5px black;
+}
+#margin-image {
+  border-radius:0%;
+  padding-left: 100px;
+}
+
+.navbar {
+  overflow: hidden;
+}
+.navbar h1 {
+  float: left;  
+}
+
+/* Dropdown Button */
+.dropdown {  
+  overflow:hidden;
+  float:right;
+  padding-right:80px;
+  
+}
+.dropdown .dropbtn {
+  cursor: pointer;
+  padding: 15px;
+  margin: 0;  
+  background-color: white;
+  /* .dropdown:hover .dropbtn WILL NOT work if the back-ground image is used instead of background-color */
+  /*background-image: linear-gradient(to bottom, rgb(13, 43, 57),rgb(22, 49, 62),rgb(37, 92, 117));*/ 
+  color: rgb(13, 43, 57);
+  font-size: 16px;  
+  outline:none;
+  border:none;
+  border-radius: 4px 4px 0 0;  
+  position:relative; 
+}
+
+/* Dropdown button on hover & focus */
+.dropdown:hover .dropbtn, .dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(41, 91, 114);
+  color: white;
+}
+
+/* Dropdown Content (hidden by default) */
+.dropdown-content {
+  display:none;
+  position: absolute;  
+  min-width: 70px;
+  min-height: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;   
+}
+.dropdown-content a{  
+  background-color: rgb(13, 43, 57);
+  color: white;
+  text-align: left;
+  display: block;
+  padding: 13px;
+}
+.dropdown-content a:hover {
+  background-color: rgb(41, 91, 114);
+}
+
+/* Display links inside the dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;    
+}
+
+/* Styling for BACK button */
+.nav-links {
+  position:absolute;
+  left:0; 
+  list-style: none;  /* set list-style to none in ul to remove the bullet points */  
+  margin-left: 100px;  
+}
+.nav-links a{
+  text-decoration: none;
+  position: relative;
+  padding: 5px;
+}
+.nav-links a::after {
+  width: 0%;
+  height: 2px; 
+  content: "";
+  background:rgb(230, 152, 111); 
+  position: absolute;
+  bottom: 0;
+  left: 0;  
+  transition: 0.5s;
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
+.back-button {
+  font-size: 15px;
+  font-weight: bold;   
+  color: rgb(41, 91, 114);   
+}
+
+.blog-title {
+  padding:30px 0 5px 0;
+  text-align: center;
+  color:rgb(41, 91, 114);
+}
+.blog-body {
+  text-align: justify;  
+  padding: 30px 300px 0 300px;
+}
+.blog-body-no-padding {
+  text-align: justify;
+}
+.blog-body-center {
+  text-align: justify;
+  padding: 20px 400px 50px 400px;
+}
+.blog-h2{
+  font-size:23px;
+  font-weight: bold;
+  color:rgb(41, 91, 114);
+  padding-bottom:2px;
+}
+.blog-h3{
+  font-size:18px;
+  font-weight: bold;
+  color:rgb(41, 91, 114);
+  padding-bottom:2px;
+}
+#icon-color {
+  color:rgb(230, 152, 111);
 }
