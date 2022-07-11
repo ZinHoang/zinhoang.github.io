@@ -1,7 +1,13 @@
-let name1 = 'Roger'
-let name2 = 'Nadal'
-let name3 = name2
+/* Use forEach to return every second item in the array */
+const array = ['test', 'whatever', 'really', 'whynot']
 
-name2 = name1
-
-console.log(name3)
+function everySecondItem(arr) {
+  let result = []
+  arr.forEach((item, i) => {
+    if (i % 2 !== 0) {
+      result.push(item)
+    }
+  })
+  return result
+}
+console.log(everySecondItem(array))
