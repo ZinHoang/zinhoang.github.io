@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>  
+    <title>JavaScript and DOM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width intial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon" type="image/x-icon" href="../images/black-cat-png-icon.png">    
+  </head>
+
+  <body>
+    <h1 class="blog-title"> What is JavaScript and the DOM ?</h1>
+    <div>
+      
+    </div>
+  <div class="blog-body">
+    <div>
+      <h3 class="blog-h3">1. Relationship between HTML, CSS and JavaScript</h3>
+      <p>Every time you open a new website, you might notice that each of them has their unique layout and you would interact with various web pages differently. The three core languages that 
+        serve as the backbone of a website are HTML, CSS and JavaScript. <br><br>
+        To help you gain a better understanding about the relationship between HTML, CSS and JavaScript, a standard two-storey house will be used as an analogy. <br><br>
+        Just as its role in constructing a web page, HTML, in this example, is the structure of the house. It, however, would be quite boring if you build a house with a plain white colour 
+        covering the entire place. This is where CSS comes in and adds some style to the house. Similar to how it adds style to a web page, CSS enables you to apply, for instance, greatly 
+        contrast colours for distinct parts of the house as well as add different designs to the living room, kitchen and so on. With CSS styles being implemented, the house now becomes more 
+        appealing and attractive. It should be highlighted that CSS is pointless without HTML as there would be nothing to style. CSS, therefore, has a tight bond with HTML and cannot exist 
+        on its own. <br><br>
+        The house is not yet complete as it’s still missing something. And that is the interaction between you and the house, which is where JavaScript offers its ability to create interactive 
+        functionality. Let’s imagine that your house has a facial recognition security built into the house. That means when you arrive at the door, the camera will scan through your face and 
+        trigger the door to be unlocked. Another example of JavaScript’s behaviour is when you turn on a switch and a light comes on or power is delivered. Without JavaScript, you can still live
+        in your house but will have very limited functions.<br><br>
+        From the provided analogy, you can see that just like building a stylish and fully functional house, it’s crucial to develop a nice-looking but also interactive website to generate 
+        seamless user experience. In another word, HTML, CSS and JavaScript cooperate and complement one another to produce an output that is comprised of content, style and interactivity.        
+      </p><br><br>
+    </div>
+    <div>
+      <h3 class="blog-h3">2. What are control flow and loops ?</h3>
+      <p>In programming, control flow refers to the order in which statements and functions are executed by the computer. Let’s take a look at the snippet of codes below.<br><br>
+        In this example, a conditional structure is used to control the flow of the program. The piece of code inside the “if” statement is executed if the variable ‘myName’ is set to ‘Zin’. 
+        Otherwise, the code located inside “else” is executed. Depending on the value of the variable, different codes will get executed.<br><br>
+
+        <img class="js-dom-img" src="../images/JS code snippet 1.png" alt="Example of Control flow"> <br><br>
+
+        Loops are often written in a script, and they have the power of changing the control flow. A loop is a sequence of instructions that get repeated until the specified condition is 
+        achieved. The action of grocery shopping can be used as an example for a loop. When you go to supermarket, you often first look at the first thing on your to-buy list, then walk to the 
+        corresponding aisle where the product is located and grab the product of interest. You will then move on to the next thing on your list and repeat the same cycle again. And you will 
+        keep iterate until all the items on the list are ticked off.
+      </p><br><br>
+    </div>
+    <div>
+      <h3 class="blog-h3">3. What is the DOM and how you might interact with it ?</h3>
+      <p>The Document Object Model (DOM) is a programming interface that defines the structure of HTML documents as well as how it is accessed and manipulated. Within the DOM, all parts of the 
+        document including elements, texts, attributes, etc. are represented as nodes in a tree-like structure.<br><br>
+
+        <img class="js-dom-img" id="dom-structure-img" src="../images/DOM structure.png" alt="structure of the DOM tree"> <br><br>
+
+        It should be stressed that the DOM is NOT a programming language, but it rather acts as gateway that enables JavaScript to access and modify its elements. Without DOM’s presence, there 
+        would be no layout of webpages for JavaScript to interact with.<br><br>
+        There are different ways to access elements in the DOM but the easiest way is to utilize their unique IDs. To do so, you will need to use <em>getElementById()</em> method that is 
+        provided by the DOM.<br><br>
+
+        <img class="js-dom-img" src="../images/JS code snippet 2.png" alt="Example of accessing elements of the DOM"> <br><br>
+
+        The purpose of the code above is to first locate the element with the id attribute of ‘one’ and then add the class called ‘blue’ to that element.
+      </p><br><br>
+    </div>
+    <div>
+      <h3 class="blog-h3">4. Difference between accessing data from Arrays and Objects</h3>
+      <p>To access data from Objects, you can use either dot or bracket notation. The example below demonstrates that using either way will return the corresponding value of the chosen key. 
+        It should be noted that value and key are the main properties of an object. In the provided example, <em>‘name’</em> and <em>‘age’</em> are keys while <em>‘John’</em> and <em>25</em> are their respective values.<br><br>
+
+        <img class="js-dom-img" src="../images/JS code snippet 3.png" alt="Example of accessing data from Objects"> <br><br>
+
+        With Arrays being used to store a collection of ordered items in a single variable, items can only be accessed via their numerical positions that are placed inside square brackets 
+        [index]. It’s of paramount importance to remember that the very first item in an array starts at an index of 0. The following example will further clarify this point.<br><br>
+
+        <img class="js-dom-img" src="../images/JS code snippet 4.png" alt="Example of accessing data from Arrays"> <br><br>
+
+        As can be seen, the value at the index of 0 is ‘Monday’ and since it starts at 0, the largest index number is 6 with relative to its size of seven items.
+      </p><br><br>
+    </div>
+    <div>
+      <h3 class="blog-h3">5. What are functions and why they are useful ?</h3>
+      <p>In JavaScript, a function is a block of reusable code written to perform a particular task. Refer to the following code to see how a function is defined and called.<br><br>
+
+        <img class="js-dom-img" src="../images/JS code snippet 5.png" alt="Example of functions in JavaScript"> <br><br>
+
+        From the example above, you can see that the term ‘function’ keyword is used to declare a function. Also, there are three other functions that appear in yellow are being called within 
+        the <em>fillOrder()</em> function.<br><br> 
+        Functions are useful in programming owing to their reusable code. Instead of having to repeat identical blocks of code throughout different parts of your program, you only need to write 
+        that code once in the form of a function. When you need to reuse the code to achieve a certain outcome, you can just simply call it to execute the function.
+      </p><br><br>
+    </div>
+    <nav>
+      <div class="nav-links">
+        <a href="../index.html" class="back-button">BACK</a>
+      </div>
+    </nav>
+  </div>
+</html>

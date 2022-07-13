@@ -93,8 +93,15 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
-  
+}
+.js-dom-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#dom-structure-img {
+  width: 360px;
+  height: 375px;
 }
 
 .navbar {
@@ -108,9 +115,7 @@
 .dropdown {  
   overflow:hidden;
   float:right;
-  padding-right:80px;
-  
-  
+  padding-right:90px;
 }
 .dropdown .dropbtn {
   cursor: pointer;
