@@ -45,6 +45,14 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 } 
+
+.body-gingham {
+  background: white;
+	background-image: linear-gradient(90deg, rgba(208, 232, 234, 0.3) 50%, transparent 0), linear-gradient(rgba(208,232,234,.3) 50%, transparent 0);
+	background-size: 100px 100px;
+	font-family: 'Fira Code', monospace;
+	text-align: center;
+}
 .row {
   display: flex;
   
@@ -65,10 +73,7 @@
   padding: 20px;
   list-style: none;    
 }
-.box {
-  /*background-color: rgb(13, 43, 57);
-  background-image: linear-gradient(to bottom, rgb(13, 43, 57),rgb(22, 49, 62),rgb(37, 92, 117)); 
-  background-image:url("../images/landscape1.jpg"); */
+.box { 
   color: white;
   padding: 20px;
   border-radius: 20px;
@@ -111,7 +116,7 @@
   float: left;  
 }
 
-/* Dropdown Button */
+/* ----------Dropdown Button------------ */
 .dropdown {  
   overflow:hidden;
   float:right;
@@ -163,7 +168,7 @@
   display: block;    
 }
 
-/* Styling for BACK button */
+/* ----------BACK Button------------ */
 .nav-links {
   position:absolute;
   left:0; 
@@ -193,6 +198,7 @@
   font-weight: bold;   
   color: rgb(41, 91, 114);   
 }
+
 
 .blog-title {
   padding:30px 0 5px 0;
@@ -224,4 +230,70 @@
 }
 #icon-color {
   color:rgb(230, 152, 111);
+}
+.inline-hyperlink {
+  color:rgb(230, 152, 111);
+  font-style: italic;
+}
+.body-gingham ul li {
+  list-style-position: inside;
+}
+.neuron-img {  
+  position: absolute;
+  width: 150px;
+  height: 128px;
+}
+
+/* ---- FOR INDENTIY - VALUE BLOG ONLY ----- */
+.body-html {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(171, 212, 231);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-image {  
+  background-image: url("../images/Zin_Queenstown.jpg");  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px); 
+  height: 100%;   
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: rgb(227, 240, 236);
+  border: 3px insert;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  padding: 20px;
+  text-align: justify;
+}
+.bg-text h1 {
+  padding:10px 0 20px 0;
+  text-align: center;
+  color:rgb(230, 187, 46);
+}
+.bg-text nav div.nav-links {  
+  margin-left: 5px;
+  padding: 40px;  
+}
+.bg-text nav div a {
+  font-size: 15px;
+  font-weight: bold;   
+  color:rgb(230, 187, 46);   
+}
+.bg-text nav div.nav-links a::after {
+  background-color:rgb(230, 187, 46);
 }

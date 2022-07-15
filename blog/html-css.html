@@ -1,80 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Margin vs Border vs Padding</title>
-    <meta name="viewport" width="device-width, initial-scale=1">
-    <link rel="stylesheet" href="../styles/main.css" >
-    <link rel="icon" type="image/x-icon" href="../images/black-cat-png-icon.png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" crossorigin="anonymous">    
-  </head>
+<head>
+  <title>Margin vs Border vs Padding</title>
+  <meta name="viewport" width="device-width, initial-scale=1">
+  <link rel="stylesheet" href="../styles/main.css" >
+  <link rel="icon" type="image/x-icon" href="../images/black-cat-png-icon.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" crossorigin="anonymous">    
+</head>
 
-  <body>
-    <h1 class="blog-title">Difference between Margin, Border and Padding in CSS
-      <i id="icon-color" class="fa-solid fa-arrows-left-right-to-line"></i>
-    </h1>
-    <div>      
-      <p class="blog-body-center">    
-        The aim of this post is to hopefully help clarify the fundamental differences between Margin, Border and Padding for you. 
-        While surfing web pages, you might have noticed that some pages have spaces between a picture and the 
-        content, or a colored-border image.  These visual presentations are achieved by applying CSS properties
-        of margin, border and padding.
-      </p>  
+<body>
+  <h1 class="blog-title">Difference between Margin, Border and Padding in CSS
+    <i id="icon-color" class="fa-solid fa-arrows-left-right-to-line"></i>
+  </h1>
+  <div>      
+    <p class="blog-body-center">    
+      The aim of this post is to hopefully help clarify the fundamental differences between Margin, Border and Padding for you. 
+      While surfing web pages, you might have noticed that some pages have spaces between a picture and the 
+      content, or a colored-border image.  These visual presentations are achieved by applying CSS properties
+      of margin, border and padding.
+    </p>  
+  </div>
+
+  <div class="row">
+    <div class="two-column">
+      <img id="margin-image" src="../images/Padding vs Border vs Margin.webp" alt="Comparison between Margin, Border and Padding">
+      <br><br><br><br><br><br><br><br>
+
+      <!-- BACK button -->
+      <nav>
+        <div class="nav-links">
+          <a href="../index.html" class="back-button">BACK</a>
+        </div>
+      </nav>
     </div>
 
-    <div class="row">
-      <div class="two-column">
-        <img id="margin-image" src="../images/Padding vs Border vs Margin.webp" alt="Comparison between Margin, Border and Padding">
-        <br><br><br><br><br><br><br><br>
-
-        <!-- BACK button -->
-        <nav>
-          <div class="nav-links">
-            <a href="../index.html" class="back-button">BACK</a>
-          </div>
-        </nav>
-      </div>
-
-      <div class="two-column" id="column-2" >
-        <!-- Padding Section -->
-        <div class="blog-h2">What is Padding ?</div>
-        <p class="blog-body-no-padding">
-          Padding is the space that separates the content from the border. To apply padding for an element,
-          you simply need to write "padding" in your code. Padding can also be declared separately for four sides
-          including top, right, bottom and left. Two pieces of code below are examples of how to use padding in CSS. <br><br>
-        </p>
-          <div class="row">
-            <div class="two-column" >
+    <div class="two-column" id="column-2" >
+      
+      <!-- Padding Section -->
+      <div class="blog-h2">What is Padding ?</div>
+      <p class="blog-body-no-padding">
+        Padding is the space that separates the content from the border. To apply padding for an element,
+        you simply need to write "padding" in your code. Padding can also be declared separately for four sides
+        including top, right, bottom and left. Two pieces of code below are examples of how to use padding in CSS. <br><br>
+      </p>
+        <div class="row">
+          <div class="two-column" >
             <p>div {               
               <br>width: 30px;
               <br>height: 50px;
               <br>padding: 20px; }
             </p>                     
-            </div> 
-            <div class="two-column">
-              div {   
-                <br>padding-top: 100px;
-                <br>padding-right: 200px;
-                <br>padding-bottom: 50px;
-                <br>padding-top: 250px; } 
-                <br><br><br>                      
-            </div>
-          </div>          
-        <!-- Border Section -->
-        <div class="blog-h2">What is Border ?</div>
-        <p class="blog-body-no-padding">
-          Border is the area that surrounds the padding of the content and it sits between the padding
-          and the margin. According to CSS's rule, an element seems to have no border due to its zero border
-          width by default.  Border's width, however, can be adjusted by setting a specific value, and the same
-          also applies to other border's properties, namely style and color. <br><br><br><br>
-        </p>
-        <!-- Margin Section -->
-        <div class="blog-h2">What is Margin ?</div>
-        <p class="blog-body-no-padding">
-          Margin is the space outside the border that separates one element from another. Similar to padding,
-          margin can be implemented by adding the term "margin" along with a certain value or it can be specified
-          for each side using margin-top, margin-right, margin-bottom and margin-left properties.
-        </p>
-      </div>
+          </div> 
+          <div class="two-column">
+            div {   
+              <br>padding-top: 100px;
+              <br>padding-right: 200px;
+              <br>padding-bottom: 50px;
+              <br>padding-top: 250px; } 
+              <br><br><br>                      
+          </div>
+        </div>  
+
+      <!-- Border Section -->
+      <div class="blog-h2">What is Border ?</div>
+      <p class="blog-body-no-padding">
+        Border is the area that surrounds the padding of the content and it sits between the padding
+        and the margin. According to CSS's rule, an element seems to have no border due to its zero border
+        width by default.  Border's width, however, can be adjusted by setting a specific value, and the same
+        also applies to other border's properties, namely style and color. <br><br><br><br>
+      </p>
+
+      <!-- Margin Section -->
+      <div class="blog-h2">What is Margin ?</div>
+      <p class="blog-body-no-padding">
+        Margin is the space outside the border that separates one element from another. Similar to padding,
+        margin can be implemented by adding the term "margin" along with a certain value or it can be specified
+        for each side using margin-top, margin-right, margin-bottom and margin-left properties.
+      </p>
     </div>
-  </body>
+  </div>
+</body>
 </html>
