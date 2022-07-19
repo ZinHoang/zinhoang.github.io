@@ -3,13 +3,14 @@
 <head>
     <title>Zin's blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">        
-    <link rel="stylesheet" href="styles/main.css">        
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- <script src="./index.js"></script>         -->
     <link rel="icon" type="image/x-icon" href="images/black-cat-png-icon.png">
     <!-- the link below enables the usage of icons from font-awesome library -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" crossorigin="anonymous">              
 </head>
 
-  <body class="landscape-image" >      
+  <body class="index-body" >      
   <div class="index-header">
     <div class="navbar">                     
       <h1 class="header-welcome" >Welcome to Zin's blogs </span>
@@ -59,6 +60,23 @@
       </div>
     -->
   </div>
+
+  <input type ="checkbox" class="index-input">
+  <script>
+    document.getElementsByClassName('index-input')[0].onclick = function () {changeBackgrd()}
+
+    function changeBackgrd() {
+      let backgrdColor = document.body.style.backgroundColor
+      if (backgrdColor === 'rgb(2, 9, 26)') {
+        document.body.style.backgroundColor ='#dda200'
+      }
+      else {
+      document.body.style.backgroundColor = 'rgb(2, 9, 26)'
+      }
+    }
+      
+  </script>  
+
   <footer class="index-footer">
     <div>
       Let's be friend &nbsp;
