@@ -3,6 +3,11 @@
   padding: 0;  
   text-decoration: none;  
 }
+
+ul li {
+  list-style-position: inside;
+}
+
 .header-welcome {
   font-size: 40px; 
   padding-left: 20px;
@@ -10,24 +15,47 @@
 .index-heading-3 {  
   color:rgb(199, 148, 81);  
   text-decoration:underline;
+  font-size: 23px;
 }
 .index-content {
   color:rgb(199, 148, 81);
 }
-.header {
+.index-header {
   width: 100%;
-  height: 48px;
-  padding: 10px 10px 0px 10px;   
-  color:rgb(41, 91, 114) ;  
-  background-color: white; 
+  height: 57px;
+  padding: 5px 10px 5px 10px;   
+  color:rgb(13, 43, 57);    
+  background-image: linear-gradient(to left, white, white,rgb(12, 116, 107),rgb(207, 139, 49));   
 }
+.index-header div h1 {
+  font-family:'Comic Sans MS', 'Comic Sans', cursive;
+}
+.index-footer {
+  position: fixed;
+  left: 0;
+  bottom:0;
+  background-image: linear-gradient(to right, rgb(1, 41, 21), rgb(12, 116, 107),rgb(207, 139, 49));
+  width: 100%;
+  height: 35px;
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+  font-family:'Comic Sans MS', 'Comic Sans', cursive;
+  font-size: 18px;  
+}
+.index-footer a {
+  background-color: transparent;
+  color: white; 
+}
+
 .landscape-image {
   background-image:url("../images/landscape1.jpg");
-  backdrop-filter: blur(5px);  
+  /*backdrop-filter: blur(5px);*/  
   background-size: 1940px;
   width: 100%;
   height: 100%;
 }
+
 @media screen and (max-width: 320px) {
   body{
     background-color: rgba(33, 74, 33, 0.947);   /* To select a corresponding landscape background image for this size of screen */
@@ -99,7 +127,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.js-dom-img {
+.code-snippet-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -120,7 +148,8 @@
 .dropdown {  
   overflow:hidden;
   float:right;
-  padding-right:90px;
+  padding-right: 100px;
+  padding-top: 14px;
 }
 .dropdown .dropbtn {
   cursor: pointer;
@@ -235,9 +264,7 @@
   color:rgb(230, 152, 111);
   font-style: italic;
 }
-.body-gingham ul li {
-  list-style-position: inside;
-}
+
 .neuron-img {  
   position: absolute;
   width: 150px;
