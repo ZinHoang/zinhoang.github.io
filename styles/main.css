@@ -11,7 +11,7 @@ ul li {
   margin-left: 17px;
 }
 
-/* ----- FOR INDEX (HOME PAGE) ----- */
+/* ----- FOR HOME PAGE ----- */
 .header-welcome {
   font-size: 40px; 
   padding-left: 20px;
@@ -65,7 +65,7 @@ ul li {
 	/* display: flex;
 	align-items: center;
 	justify-content: center; */	
-  background-color: #dda200;
+  background-color: rgb(12, 116, 107);
 }
 
 /* ------- HAPPINESS/SAD TOGGLE BUTTON ------- */
@@ -73,6 +73,7 @@ ul li {
 	/* position: absolute; */
   margin-right:auto;
   margin-left:auto;
+  margin-top: 110px;
   display: block;
 	width: 179px;
 	height: 70px;
@@ -96,7 +97,7 @@ ul li {
 	left: 20px;
 	z-index: 0;  */
 	box-shadow: 26px 0px 0 0px white,  
-				13px 5px 0 20px #dda200;
+				13px 5px 0 20px rgb(12, 116, 107);
 	transition:0.5s;
 }
 .index-input[type="checkbox"]:after{
@@ -123,15 +124,18 @@ ul li {
 	transform: translateX(105px);
 }
 
-
-
-.landscape-image {
-  background-image:url("../images/landscape1.jpg");   
-  background-size: 1940px;
-  width: 100%;
-  height: 100%;
+/* ---- TE-HOUTAEWE BLOG ---- */
+.te-houtaewa-body {
+  color:#dda200;
+  text-align: justify;  
+  padding: 100px 300px 0 300px;
+}
+.te-houtaewa-body nav a {
+  color:#dda200; 
+  margin-left: 190px ; 
 }
 
+/* ---- MEDIA QUERIES FOR DIFFERENT SCREEN SIZES ---- */
 @media screen and (max-width: 320px) {
   body{
     background-color: rgba(33, 74, 33, 0.947);   /* To select a corresponding landscape background image for this size of screen */
@@ -150,9 +154,42 @@ ul li {
   }
 } 
 
+/* ------- GENERIC STYLING FOR BLOGS ------- */
+.blog-title {
+  padding:30px 0 5px 0;
+  text-align: center;
+  color:rgb(41, 91, 114);
+}
+.blog-body {
+  text-align: justify;  
+  padding: 30px 300px 0 300px;
+}
+.blog-body-no-padding {
+  text-align: justify;
+}
+.blog-body-center {
+  text-align: justify;
+  padding: 20px 400px 50px 400px;
+}
+.blog-h2{
+  font-size:23px;
+  font-weight: bold;
+  color:rgb(41, 91, 114);
+  padding-bottom:2px;
+}
+.blog-h3{
+  font-size:18px;
+  font-weight: bold;
+  color:rgb(41, 91, 114);
+  padding-bottom:2px;
+}
+#icon-color {
+  color:rgb(230, 152, 111);
+}
+
 .body-gingham {
   background: white;
-	background-image: linear-gradient(90deg, rgba(208, 232, 234, 0.3) 50%, transparent 0), linear-gradient(rgba(208,232,234,.3) 50%, transparent 0);
+	background-image: linear-gradient(90deg, rgba(156, 216, 223, 0.3) 50%, transparent 0), linear-gradient(rgba(156, 216, 223, 0.3) 50%, transparent 0);
 	background-size: 100px 100px;
 	font-family: 'Fira Code', monospace;
 	text-align: center;
@@ -182,6 +219,21 @@ ul li {
   border-radius: 20px;
   font-size: 16px;  
 }
+.navbar {
+  overflow: hidden;
+}
+.navbar h1 {
+  float: left;  
+}
+
+/* ---- IMAGES / SCREENSHOTS OF ALL BLOGS */
+#landscape-image {
+  background-image:url("../images/landscape1.jpg");   
+  background-size: 1940px;
+  backdrop-filter: blur(8px);
+  /* width: 100%; */
+  height: 100%;
+}
 #my-image {
   float:right;
   border-radius: 50%;
@@ -206,18 +258,31 @@ ul li {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px;
 }
 #dom-structure-img {
   width: 360px;
   height: 375px;
 }
+#neuron-img {  
+  position: absolute;
+  width: 150px;
+  height: 128px;
+}
+#light-color-backgrd {
+  background-image: linear-gradient(to right, rgb(102, 180, 150),rgb(150, 218, 192),rgb(203, 236, 224));
+}
+#colorful-backgrd {
+  background-image: url("../images/colorful-background.png");  
+}
+#problem-solve-backgrd {
+  background-image: url("../images/problem-solve-background.png");
+  backdrop-filter: blur(7px); 
+}
+#learning-plan-backgrd {
+  background-image: url("../images/learning-plan-backgrd.jpg");
+}
 
-.navbar {
-  overflow: hidden;
-}
-.navbar h1 {
-  float: left;  
-}
 
 /* ---------- DROPDOWN BUTTON ------------ */
 .dropdown {  
@@ -303,37 +368,9 @@ ul li {
   color: rgb(41, 91, 114);   
 }
 
-/* ------- GENERIC STYLING FOR BLOGS ------- */
-.blog-title {
-  padding:30px 0 5px 0;
-  text-align: center;
-  color:rgb(41, 91, 114);
-}
-.blog-body {
-  text-align: justify;  
-  padding: 30px 300px 0 300px;
-}
-.blog-body-no-padding {
-  text-align: justify;
-}
-.blog-body-center {
-  text-align: justify;
-  padding: 20px 400px 50px 400px;
-}
-.blog-h2{
-  font-size:23px;
-  font-weight: bold;
-  color:rgb(41, 91, 114);
-  padding-bottom:2px;
-}
-.blog-h3{
-  font-size:18px;
-  font-weight: bold;
-  color:rgb(41, 91, 114);
-  padding-bottom:2px;
-}
-#icon-color {
-  color:rgb(230, 152, 111);
+/* ------- FOR EMOTIONAL INTELLIGENCE BLOG ------- */
+#light-color-backgrd .blog-body {
+  padding: 30px 500px 0 500px;
 }
 
 /* ------- FOR NEUROPLASTICITY BLOG ------- */
@@ -341,10 +378,43 @@ ul li {
   color:rgb(230, 152, 111);
   font-style: italic;
 }
-.neuron-img {  
-  position: absolute;
-  width: 150px;
-  height: 128px;
+
+/* ------- FOR LEARNING-PLAN BLOG -------  */
+#learning-plan-backgrd .blog-title {
+  color:white;
+}
+#learning-plan-backgrd .blog-body {
+  color:white;
+}
+#learning-plan-backgrd .blog-h3 {
+  color:rgb(230, 152, 111);
+}
+#learning-plan-backgrd nav div a {
+  color: white;
+}
+
+/* ------- FOR PROBLEM-SOLVING BLOG -------  */
+#problem-solve-backgrd .blog-title {
+  color: rgb(78, 157, 194);
+}
+#problem-solve-backgrd .blog-body  {
+  color: rgb(78, 157, 194);
+  font-weight: bold;
+  padding: 30px 450px 0 450px;
+}
+#problem-solve-backgrd .blog-h3  {
+  color: rgb(16, 99, 138);
+  background-color: rgb(230, 152, 111);
+  height: 20px;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#problem-solve-backgrd nav div a {
+  color: rgb(78, 157, 194);
 }
 
 /* ------- FOR INDENTIY - VALUE BLOG ------- */
@@ -398,3 +468,5 @@ ul li {
 .bg-text nav div.nav-links a::after {
   background-color:rgb(230, 187, 46);
 }
+
+
