@@ -3,8 +3,7 @@
 <head>
     <title>Zin's blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">        
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- <script src="./index.js"></script>         -->
+    <link rel="stylesheet" href="styles/main.css">    
     <link rel="icon" type="image/x-icon" href="images/black-cat-png-icon.png">
     <!-- the link below enables the usage of icons from font-awesome library -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" crossorigin="anonymous">              
@@ -22,7 +21,8 @@
           <a href="./blog/identity-values.html">Identity & Values</a>
           <a href="./blog/learning-plan.html">Learning Plan</a>
           <a href="./blog/emotional-intelligence.html">Emotional Intelligence</a>
-          <a href="./blog/neuroplasticity.html">Neuroplasticity</a>                  
+          <a href="./blog/neuroplasticity.html">Neuroplasticity</a>
+          <a href="./blog/foundations-reflection.html">Reflection</a>               
         </div>
       </div>    
       <div class="dropdown">
@@ -62,25 +62,7 @@
   </div>
 
   <input type ="checkbox" class="index-input">
-  <script>
-    document.getElementsByClassName('index-input')[0].onclick = function () {changeBackgrd()}
-
-    function changeBackgrd() {
-      let backgrdColor = document.body.style.backgroundColor
-      if (backgrdColor === 'rgb(2, 9, 26)') {
-        document.body.style.backgroundColor ='rgb(12, 116, 107)';
-        document.getElementById('index-heading-3').style.textShadow = 'none';
-        document.getElementById('index-content').style.textShadow = 'none'
-      }
-      else {
-      document.body.style.backgroundColor = 'rgb(2, 9, 26)';
-      document.getElementById('index-heading-3').style.textShadow = '8px 2px 10px rgb(208, 227, 240)';
-      document.getElementById('index-content').style.textShadow = '8px 2px 10px rgb(208, 227, 240)'       
-      }
-    }
-      
-  </script>  
-
+  
   <footer class="index-footer">
     <div>
       Let's be friend &nbsp;
@@ -88,7 +70,10 @@
       <a href='https://www.linkedin.com/in/zinhoang/'><i class="fa-brands fa-linkedin"></i></a> &nbsp;
       <a href='https://github.com/ZinHoang'><i class= "fa-brands fa-github"></i></a>
     </div>
-
   </footer>   
+  
+  <!-- Position script at the end in the body so that the DOM can load all the elements before any JavaScript happens -->
+  <script src="./index.js"></script>  
+
 </body>   
 </html>
