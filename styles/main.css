@@ -40,12 +40,12 @@ ul li {
   text-shadow: 1px 1px 2px rgb(204, 230, 241);
 }
 #index-heading-3 {    
-  color:rgb(4, 50, 77);  
+  color:white;  
   text-decoration:underline;
   font-size: 25px;
 }
 #index-content {
-  color:rgb(4, 50, 77);
+  color:white;
   font-size: 18px;
   font-weight: bold;
 }
@@ -53,7 +53,7 @@ ul li {
   width: 100%;
   height: 57px;
   padding: 5px 10px 5px 10px; 
-  color:rgb(4, 50, 77);  
+  color:white;  
   /* background-image: linear-gradient(to left, white, white,rgb(236, 152, 41),rgb(5, 40, 43));    */
 }
 .index-header div h1 {
@@ -63,7 +63,7 @@ ul li {
   position: fixed;
   left: 0;
   bottom:0;
-  background-image: linear-gradient(to right,  rgb(218, 67, 67),rgb(3, 29, 31),rgb(238, 174, 0));
+  background-image: linear-gradient(to right,  rgb(218, 67, 67),rgb(3, 29, 31),rgb(130, 179, 66));
   width: 100%;
   height: 35px;
   padding-top: 10px;
@@ -123,7 +123,7 @@ ul li {
 	left: 20px;
 	z-index: 0;  */
 	box-shadow: 26px 0px 0 0px white,  
-				13px 5px 0 20px rgb(70, 132, 156);
+				13px 5px 0 20px rgb(218, 120, 28);
 	transition:0.5s;
 }
 .index-input[type="checkbox"]:after{
