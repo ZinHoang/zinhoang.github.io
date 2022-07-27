@@ -30,31 +30,31 @@ ul li {
   height: 50px;
   position: absolute;
   right:780px;
-  top: 25px;
-  
+  top: 25px;  
 }
 
 /* ----- FOR HOME PAGE ----- */
-.header-welcome {
+#header-welcome {
   font-size: 40px; 
   padding-left: 20px;
-  text-shadow: 2px 2px 10px white;
+  text-shadow: 1px 1px 2px rgb(204, 230, 241);
 }
-#index-heading-3 {  
-  color:white;  
+#index-heading-3 {    
+  color:rgb(4, 50, 77);  
   text-decoration:underline;
-  font-size: 23px;
+  font-size: 25px;
 }
 #index-content {
-  color:white;
+  color:rgb(4, 50, 77);
+  font-size: 18px;
   font-weight: bold;
 }
 .index-header {
   width: 100%;
   height: 57px;
-  padding: 5px 10px 5px 10px;   
-  color:rgb(13, 43, 57);    
-  background-image: linear-gradient(to left, white, white,rgb(12, 116, 107),rgb(207, 139, 49));   
+  padding: 5px 10px 5px 10px; 
+  color:rgb(4, 50, 77);  
+  /* background-image: linear-gradient(to left, white, white,rgb(236, 152, 41),rgb(5, 40, 43));    */
 }
 .index-header div h1 {
   font-family:'Comic Sans MS', 'Comic Sans', cursive;
@@ -63,7 +63,7 @@ ul li {
   position: fixed;
   left: 0;
   bottom:0;
-  background-image: linear-gradient(to right, rgb(1, 41, 21), rgb(12, 116, 107),rgb(207, 139, 49));
+  background-image: linear-gradient(to right,  rgb(218, 67, 67),rgb(3, 29, 31),rgb(238, 174, 0));
   width: 100%;
   height: 35px;
   padding-top: 10px;
@@ -80,16 +80,17 @@ ul li {
   transform: scale(1.3);
   transition: 0.3s;
 }
-
 .index-body{
-	height: 100vh;
+	height: 100%;
 	width: 100vw;
 	padding: 0;
 	margin: 0;
 	/* display: flex;
 	align-items: center;
-	justify-content: center; */	
-  background-color: rgb(12, 116, 107);
+	justify-content: center; */	  
+}
+#index-background {
+  background-image: url("../images/homepage-bckgrd1.webp");
 }
 
 
@@ -122,7 +123,7 @@ ul li {
 	left: 20px;
 	z-index: 0;  */
 	box-shadow: 26px 0px 0 0px white,  
-				13px 5px 0 20px rgb(12, 116, 107);
+				13px 5px 0 20px rgb(70, 132, 156);
 	transition:0.5s;
 }
 .index-input[type="checkbox"]:after{
@@ -164,7 +165,7 @@ ul li {
 /* ---- MEDIA QUERIES FOR DIFFERENT SCREEN SIZES ---- */
 @media screen and (max-width: 320px) {
   body{
-    background-color: rgba(33, 74, 33, 0.947);   /* To select a corresponding landscape background image for this size of screen */
+    background-color: rgba(33, 74, 33, 0.947);  
   }
 }
 @media screen and (max-width: 768px) {
@@ -188,7 +189,7 @@ ul li {
 }
 .blog-body {
   text-align: justify;  
-  padding: 30px 500px 0 500px;
+  padding: 30px 300px 0 300px;
 }
 .blog-body-no-padding {
   text-align: justify;
@@ -232,7 +233,7 @@ ul li {
 }
 .three-column {
   flex: 33%;
-  margin: 80px 50px 0 50px;
+  margin: 30px 0px 0 30px;
   position: relative;
 }
 .three-column ul {    
@@ -268,9 +269,11 @@ ul li {
   margin: 50px 320px 5px 20px;
   box-shadow: 10px 5px 5px black;
 }
-#margin-image {
-  border-radius:0%;
+#margin-image {  
   padding-left: 100px;
+}
+.margin-backgrd {
+  background-color: #e4d5ab;
 }
 #eq-image {
   padding: 10px 0 0 20px;
@@ -309,7 +312,9 @@ ul li {
   background-image: url("../images/learning-plan-backgrd.jpg");
   backdrop-filter: blur(3px);
 }
-
+#foundation-backgrd {
+  background-image: url("../images/foundation-backgrd.jpg"); 
+}
 
 /* ---------- DROPDOWN BUTTON ------------ */
 .dropdown {  
@@ -329,7 +334,7 @@ ul li {
   font-size: 16px;  
   outline:none;
   border:none;
-  border-radius: 4px 4px 0 0;  
+  border-radius: 4px;  
   position:relative; 
 }
 
@@ -390,7 +395,7 @@ ul li {
   width: 100%;
 }
 .back-button {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bold;   
   color: rgb(41, 91, 114);   
 }
@@ -405,6 +410,9 @@ ul li {
   color:rgb(230, 152, 111);
   font-style: italic;
   text-decoration: underline;
+}
+.body-gingham nav div a {
+font-size: 15px;
 }
 
 /* ------- FOR LEARNING-PLAN BLOG -------  */
@@ -431,12 +439,11 @@ ul li {
 }
 #problem-solve-backgrd .blog-body  {
   color: rgb(78, 157, 194);
-  font-weight: bold;
-  padding: 30px 450px 0 450px;
+  font-weight: bold;  
 }
 #problem-solve-backgrd .blog-h3  {
   color: rgb(16, 99, 138);
-  background-color: rgb(230, 152, 111);
+  background-color: rgb(166, 208, 228);
   height: 20px;
   width: 100%;
   padding: 5px;
@@ -449,7 +456,24 @@ ul li {
   color: rgb(78, 157, 194);
 }
 
-/* ------- FOR INDENTIY - VALUE BLOG ------- */
+/* ------- FOR FOUNDATION REFLECTION BLOG ------- */
+#foundation-backgrd .blog-body {
+  color: white;
+  
+}
+#foundation-backgrd .blog-title {
+  color: white;
+  margin: 70px 0 50px 0;
+  font-size: 50px;
+}
+#foundation-backgrd .blog-h3 {
+  color: rgb(211, 136, 37);
+}
+#foundation-backgrd nav div a {
+  color: white;
+}
+
+/* ------- FOR IDENTITY - VALUE BLOG ------- */
 .body-html {
   height: 100%;
   margin: 0;
