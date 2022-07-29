@@ -6,8 +6,5 @@ function start() {
 
 function changeBackgrd(evt) {
   let body = document.getElementById('index-body')
-  let headerColor = document.getElementById('header-welcome')
-
   body.classList.toggle('index-background2')
-  headerColor.classList.toggle('header-welcome2')
 }
