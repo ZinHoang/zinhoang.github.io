@@ -209,7 +209,7 @@ ul li {
 
 .body-gingham {
   background: white;
-	background-image: linear-gradient(90deg, rgba(156, 216, 223, 0.3) 50%, transparent 0), linear-gradient(rgba(156, 216, 223, 0.3) 50%, transparent 0);
+	background-image: linear-gradient(90deg, rgba(236, 213, 178, 0.3) 50%, transparent 0), linear-gradient(rgba(236, 213, 178, 0.3) 50%, transparent 0);
 	background-size: 100px 100px;
 	font-family: 'Fira Code', monospace;
 	text-align: center;
@@ -298,8 +298,8 @@ ul li {
   width: 150px;
   height: 128px;
 }
-#light-color-backgrd {
-  background-image: linear-gradient(to right, rgb(102, 180, 150),rgb(150, 218, 192),rgb(203, 236, 224));
+#light-color-backgrd {  
+  background-color: rgb(238, 238, 185);
 }
 #colorful-backgrd {
   background-image: url("../images/colorful-background.png");  
@@ -312,8 +312,9 @@ ul li {
   background-image: url("../images/learning-plan-backgrd.jpg");
   backdrop-filter: blur(3px);
 }
-#foundation-backgrd {
-  background-image: url("../images/foundation-backgrd.jpg"); 
+#foundation-backgrd {  
+  background-image: linear-gradient(90deg, rgba(231, 198, 148, 0.3) 50%, transparent 0), linear-gradient(rgba(236, 213, 178, 0.3) 50%, transparent 0);
+  background-size: 10px 10px;
 }
 
 /* ---------- DROPDOWN BUTTON ------------ */
@@ -458,19 +459,21 @@ font-size: 15px;
 
 /* ------- FOR FOUNDATION REFLECTION BLOG ------- */
 #foundation-backgrd .blog-body {
-  color: white;
-  
+  color: black;  
 }
 #foundation-backgrd .blog-title {
-  color: white;
-  margin: 70px 0 50px 0;
+  color: rgb(20, 66, 109);
+  margin: 0 0 50px 0;
+  padding-top: 70px;
   font-size: 50px;
 }
 #foundation-backgrd .blog-h3 {
-  color: rgb(211, 136, 37);
+  color: rgb(20, 66, 109);
+  font-size: 20px;
+  font-style: italic;
 }
 #foundation-backgrd nav div a {
-  color: white;
+  color: rgb(20, 66, 109);
 }
 
 /* ------- FOR IDENTITY - VALUE BLOG ------- */
