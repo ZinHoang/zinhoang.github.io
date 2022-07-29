@@ -39,6 +39,9 @@ ul li {
   padding-left: 20px;
   text-shadow: 1px 1px 2px rgb(204, 230, 241);
 }
+.header-welcome2 {
+  color: rgb(218, 67, 67);
+}
 #index-heading-3 {    
   color:white;  
   text-decoration:underline;
@@ -52,9 +55,8 @@ ul li {
 .index-header {
   width: 100%;
   height: 57px;
-  padding: 5px 10px 5px 10px; 
-  color:white;  
-  /* background-image: linear-gradient(to left, white, white,rgb(236, 152, 41),rgb(5, 40, 43));    */
+  padding: 25px 10px 5px 10px; 
+  color:white;    
 }
 .index-header div h1 {
   font-family:'Comic Sans MS', 'Comic Sans', cursive;
@@ -63,7 +65,7 @@ ul li {
   position: fixed;
   left: 0;
   bottom:0;
-  background-image: linear-gradient(to right,  rgb(218, 67, 67),rgb(3, 29, 31),rgb(130, 179, 66));
+  background-image: linear-gradient(to right,  rgb(223, 85, 85),rgb(3, 29, 31),rgb(130, 179, 66));
   width: 100%;
   height: 35px;
   padding-top: 10px;
@@ -80,7 +82,7 @@ ul li {
   transform: scale(1.3);
   transition: 0.3s;
 }
-.index-body{
+#index-body{
 	height: 100%;
 	width: 100vw;
 	padding: 0;
@@ -88,9 +90,6 @@ ul li {
 	/* display: flex;
 	align-items: center;
 	justify-content: center; */	  
-}
-#index-background {
-  background-image: url("../images/homepage-bckgrd1.webp");
 }
 
 
@@ -254,6 +253,13 @@ ul li {
 }
 
 /* ---- IMAGES / SCREENSHOTS OF ALL BLOGS */
+.index-background1 {
+  background-image: url("../images/homepage-bckgrd1.webp");
+}
+.index-background2 {
+  background-image: url("../images/homepage-bckgrd2.jpg");  
+}
+
 #landscape-image {
   background-image:url("../images/landscape1.jpg");   
   background-size: 1940px;
