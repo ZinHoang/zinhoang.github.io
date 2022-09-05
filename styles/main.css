@@ -55,11 +55,12 @@ ul li {
   padding: 25px 10px 5px 10px; 
   color:white;    
 }
-.index-footer {
+#index-footer {
   position: fixed;
   left: 0;
   bottom:0;
-  background-image: linear-gradient(to right,  rgb(223, 85, 85),rgb(3, 29, 31),rgb(130, 179, 66));
+  /* background-image: linear-gradient(to right,  rgb(223, 85, 85),rgb(3, 29, 31),rgb(130, 179, 66));   */
+  background-color: #03283d;
   width: 100%;
   height: 35px;
   padding-top: 10px;
@@ -68,11 +69,14 @@ ul li {
   font-family:'Comic Sans MS', 'Comic Sans', cursive;
   font-size: 18px;  
 }
-.index-footer a {
+.index-footerOne { 
+  background-image: linear-gradient(to right,  rgb(78, 78, 78),rgb(206, 206, 206),rgb(184, 184, 184));   
+}
+#index-footer a {
   background-color: transparent;
   color: white; 
 }
-.index-footer i:hover {
+#index-footer i:hover {
   transform: scale(1.3);
   transition: 0.3s;
 }
